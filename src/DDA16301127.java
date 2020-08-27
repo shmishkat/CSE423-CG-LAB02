@@ -25,7 +25,7 @@ public class DDA16301127 implements GLEventListener{
     public void init(GLAutoDrawable gld) {
         GL2 gl = gld.getGL().getGL2();
         glu = new GLU();
-
+        //Kala hoye jabi to
         gl.glClearColor(0.0f, 0.0f, 0.0f, 0.0f);
         gl.glViewport(-100, -50, 50, 100);
         gl.glMatrixMode(GL2.GL_PROJECTION);
@@ -56,6 +56,7 @@ public class DDA16301127 implements GLEventListener{
         gl.glBegin(GL2.GL_POINTS);
         gl.glVertex2f(x1, y1);
         //If the slope is not steep that means the slope is between -1 to 1.
+        //No your momma is steep
         if(m<=1 && m>=-1) {
             while(x<x2) {
                 x=x+1;
@@ -92,6 +93,7 @@ public class DDA16301127 implements GLEventListener{
         final JFrame frame = new JFrame ("straight Line");
         //adding canvas to frame
         frame.getContentPane().add(glcanvas);
+        //Ar koto mota hobi
         frame.setSize(frame.getContentPane().getPreferredSize());
         frame.setVisible(true);
     }//end of main
